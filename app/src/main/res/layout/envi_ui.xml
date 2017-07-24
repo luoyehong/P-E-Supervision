@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //漏水状态
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="漏水状态：正常"
+            android:textSize="12sp"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            />
+    </LinearLayout>
+
+    //冷通道状态
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="冷通道状态"
+                android:textSize="20sp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cdcbcb">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/envi_img_temp"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/sign_front_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="℃"
+                        android:textSize="30sp"
+                        android:textColor="#ea5d4a"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@id/sign_front_temp"
+                        android:layout_centerVertical="true"
+                        android:text="20.0"
+                        android:textSize="60sp"
+                        android:textColor="#ea5d4a" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#cdcbcb">
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/envi_img_hum"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/sign_front_hum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="%"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@id/sign_front_hum"
+                        android:layout_centerVertical="true"
+                        android:text="60.0"
+                        android:textSize="60sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    //热通道状态
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebebeb">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:text="热通道状态"
+                android:textSize="20sp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#cdcbcb">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/envi_img_temp"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentLeft="true" />
+
+                    <TextView
+                        android:id="@+id/sign_rear_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="℃"
+                        android:textSize="30sp"
+                        android:textColor="#ea5d4a"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@id/sign_rear_temp"
+                        android:layout_centerVertical="true"
+                        android:text="20.0"
+                        android:textSize="60sp"
+                        android:textColor="#ea5d4a" />
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#cdcbcb">
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/envi_img_hum"
+                        android:adjustViewBounds="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:id="@+id/sign_rear_hum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="%"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toLeftOf="@id/sign_rear_hum"
+                        android:layout_centerVertical="true"
+                        android:text="60.0"
+                        android:textSize="60sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    //门禁状态
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1096f8">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:text="前门状态：闭合"
+                    android:textColor="#FFF"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <com.czp.library.ArcProgress
+                        android:id="@+id/myProgress01"
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        android:layout_centerInParent="true"
+                        app:arcCapRound="true"
+                        app:borderWidth="8dp"
+                        app:degree="120"
+                        app:progressColor="#88e73c"
+                        app:progressStyle="arc"
+                        app:radius="70dp"
+                        app:unprogresColor="#0b72bc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/myProgress01"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="32dp"
+                        android:text="开启前门"
+                        android:textColor="#FFF"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:background="#0cd7fc">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:gravity="center"
+                    android:text="后门状态：闭合"
+                    android:textColor="#FFF"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <com.czp.library.ArcProgress
+                        android:id="@+id/myProgress02"
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        android:layout_centerInParent="true"
+                        app:arcCapRound="true"
+                        app:borderWidth="8dp"
+                        app:degree="120"
+                        app:progressColor="#88e73c"
+                        app:progressStyle="arc"
+                        app:radius="70dp"
+                        app:unprogresColor="#0b72bc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/myProgress02"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="32dp"
+                        android:text="开启后门"
+                        android:textColor="#FFF"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

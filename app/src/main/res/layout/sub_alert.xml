@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4">
+
+    //详细信息
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="#fafafa">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报警事件"
+                android:textSize="18dp"
+                android:textColor="#6d6d72"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前状态"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定人"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定时间"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报警结束时间"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sub_alert_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_gravity="right"/>
+            <TextView
+                android:id="@+id/sub_alert_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/sub_alert_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/sub_alert_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/sub_alert_definiteTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/sub_alert_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#6d6d72"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcbcb"
+        android:layout_marginBottom="25dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcbcb" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#fafafa"
+        android:text="确定事件"
+        android:textSize="18sp"
+        android:enabled="false"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcbcb" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcbcb" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#fafafa"
+        android:text="删除报警信息"
+        android:textSize="18sp"
+        android:textColor="#ff2c2c"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cdcbcb" />
+
+</LinearLayout>
