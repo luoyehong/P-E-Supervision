@@ -1,201 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="趋势图（占地）"
-            android:textSize="20dp"/>
-
-    </RelativeLayout>
-
-
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#efeff4">
+            android:layout_height="200dp">
+
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="39dp"
-                android:layout_marginLeft="10dp"
-                android:text="高温警报值"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
-        </LinearLayout>
+                android:layout_centerInParent="true"
+                android:text="趋势图（占地）"
+                android:textSize="20dp"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
+        </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:text="25  ℃"
-                android:textSize="18sp" />
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="30dp"
-                android:layout_margin="10dp"
-                android:text="修改"
-                android:textColor="#007aff"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:background="@drawable/button_ui"/>
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#efeff4">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_marginLeft="10dp"
-                android:text="高温警报设置范围：25~35℃"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="10dp"
-                android:text="高湿警报值"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:text="25  ℃"
-                android:textSize="18sp" />
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="30dp"
-                android:layout_margin="10dp"
-                android:text="修改"
-                android:textColor="#007aff"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:background="@drawable/button_ui"/>
-        </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#efeff4">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_marginLeft="10dp"
-                android:text="高湿警报值设置范围：40~80%"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
-            <TextView
+                android:layout_height="60dp"
+                android:background="#efeff4">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="39dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="高温警报值"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+            </LinearLayout>
+
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
-                android:layout_marginLeft="10dp"
-                android:text="低湿警报值"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
-        </LinearLayout>
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="10dp"
-                android:layout_gravity="center"
-                android:text="25  ℃"
-                android:textSize="18sp" />
-            <Button
-                android:layout_width="70dp"
-                android:layout_height="30dp"
-                android:layout_margin="10dp"
-                android:text="修改"
-                android:textColor="#007aff"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:background="@drawable/button_ui"/>
-        </LinearLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#cdcbcb"/>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:background="#efeff4">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_marginLeft="10dp"
-                android:text="低湿警报值设置范围：20~40%"
-                android:textSize="14sp"
-                android:textColor="#6d6d72" />
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:text="25  ℃"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:text="修改"
+                    android:textColor="#007aff"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/button_ui"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#efeff4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="高温警报设置范围：25~35℃"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="高湿警报值"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:text="25  ℃"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:text="修改"
+                    android:textColor="#007aff"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/button_ui"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#efeff4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="高湿警报值设置范围：40~80%"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="低湿警报值"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:text="25  ℃"
+                    android:textSize="18sp" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:text="修改"
+                    android:textColor="#007aff"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:background="@drawable/button_ui"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cdcbcb"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#efeff4">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="低湿警报值设置范围：20~40%"
+                    android:textSize="14sp"
+                    android:textColor="#6d6d72" />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
-
 </LinearLayout>

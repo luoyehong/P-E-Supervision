@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="63dp"
+                android:text="用  户"
+                android:inputType="text"
+                android:textColor="#6d6d72"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/login_user"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxLines="1"
+                android:textColorHighlight="#00a2e9"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:inputType="text"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="63dp"
+                android:text="密  码"
+                android:textColor="#6d6d72"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.75"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHighlight="#00a2e9"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Service IP"
+                android:textSize="18sp"
+                android:textColor="#6d6d72"/>
+
+            <EditText
+                android:id="@+id/login_TCPSet_ip"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:digits="1234567890."
+                android:inputType="number"
+                android:textColorHighlight="#00a2e9"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service 端口"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="#6d6d72"/>
+
+            <EditText
+                android:id="@+id/login_TCPSet_port"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColorHighlight="#88dbff"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb"/>
+
+        <Button
+            android:id="@+id/login_sign"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/blue"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+</LinearLayout>

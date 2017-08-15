@@ -3,11 +3,10 @@ package com.example.xiewh.pesupervision.db;
 import org.litepal.crud.DataSupport;
 
 /**
- * Created by XiEwH on 2017/7/15.
+ * Created by XiEwH on 2017/8/11.
  */
 
-public class AlarmData extends DataSupport {
-
+public class EventAlarmData extends DataSupport {
     private String number;//序号
 
     private String alarmEvent; //警报事件
@@ -20,43 +19,31 @@ public class AlarmData extends DataSupport {
 
     private String alarmDefiniteTime; //确定时间
 
-    private String alarmEndTime; //结束时间
-
-
-    public String getnumber(){
-        return number;
-    }
-
-    public void setId(String number){
-        this.number=number;
-    }
-
-    public String getAlarmEvent(){
+    public String getAlarmEvent() {
         return alarmEvent;
     }
 
-    public void setAlarmEvent(String alarmEvent){
-        this.alarmEvent=alarmEvent;
+    public void setAlarmEvent(String alarmEvent) {
+        this.alarmEvent = alarmEvent;
     }
 
-    public String getAlarmTime(){
+    public String getAlarmTime() {
         return alarmTime;
     }
 
-    public void setAlarmTime(String alarmTime)
-    {
-        this.alarmTime=alarmTime;
+    public void setAlarmTime(String alarmTime) {
+        this.alarmTime = alarmTime;
     }
 
-    public String getAlarmState(){
+    public String getAlarmState() {
         return alarmState;
     }
 
-    public void setAlarmState(String alarmState){
-        this.alarmState=alarmState;
+    public void setAlarmState(String alarmState) {
+        this.alarmState = alarmState;
     }
 
-    public String getAlarmMakeSurePeople(){
+    public String getAlarmMakeSurePeople() {
         return alarmMakeSurePeople;
     }
 
@@ -72,12 +59,12 @@ public class AlarmData extends DataSupport {
         this.alarmDefiniteTime = alarmDefiniteTime;
     }
 
-    public String getAlarmEndTime() {
-        return alarmEndTime;
+    public String getnumber() {
+
+        return number;
     }
 
-    public void setAlarmEndTime(String alarmEndTime) {
-        this.alarmEndTime = alarmEndTime;
+    public void setnumber(String number) {
+        this.number = number;
     }
-
 }

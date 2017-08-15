@@ -2,10 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_cancel"
+            android:id="@+id/nav_TCPSet"
+            android:icon="@drawable/nav_cancel"
+            android:title="TCP连接设置" />
+        <item
+            android:id="@+id/nav_Cancellation"
             android:icon="@drawable/nav_cancel"
             android:title="注销" />
 
     </group>
-
 </menu>

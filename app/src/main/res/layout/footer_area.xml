@@ -26,12 +26,14 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/ic_image_home"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_home"
+                    android:src="@drawable/ic_home"
                     android:layout_gravity="center"
                     />
                 <TextView
+                    android:id="@+id/ic_text_home"
                     android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -56,12 +58,14 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/ic_image_envi"
                     android:layout_width="36dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_envi"
+                    android:src="@drawable/ic_envi"
                     android:layout_gravity="center"
                     />
                 <TextView
+                    android:id="@+id/ic_text_envi"
                     android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -85,12 +89,14 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/ic_image_power"
                     android:layout_width="36dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_power"
+                    android:src="@drawable/ic_power"
                     android:layout_gravity="center"
                     />
                 <TextView
+                    android:id="@+id/ic_text_power"
                     android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -114,12 +120,14 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/ic_image_cooling"
                     android:layout_width="34dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_cooling"
+                    android:src="@drawable/ic_cooling"
                     android:layout_gravity="center"
                     />
                 <TextView
+                    android:id="@+id/ic_text_cooling"
                     android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -143,12 +151,14 @@
                 android:layout_marginTop="10dp">
 
                 <ImageView
+                    android:id="@+id/ic_image_record"
                     android:layout_width="34dp"
                     android:layout_height="30dp"
-                    android:background="@drawable/ic_record"
+                    android:src="@drawable/ic_record"
                     android:layout_gravity="center"
                     />
                 <TextView
+                    android:id="@+id/ic_text_record"
                     android:layout_marginTop="3dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

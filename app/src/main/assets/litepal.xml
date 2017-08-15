@@ -3,10 +3,13 @@
 
     <dbname value="PES_weather" />
 
-    <version value="1" />
+    <version value="5" />
 
     <list>
         <mapping class="com.example.xiewh.pesupervision.db.AlarmData" />
+        <mapping class="com.example.xiewh.pesupervision.db.StatusData" />
+        <mapping class="com.example.xiewh.pesupervision.db.EventAlarmData" />
+        <mapping class="com.example.xiewh.pesupervision.db.SetData" />
     </list>
 
 </litepal>

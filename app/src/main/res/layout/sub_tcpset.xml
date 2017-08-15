@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="20dp"
+                android:text="Service IP"
+                android:textSize="18sp"
+                android:textColor="#6d6d72"/>
+
+            <EditText
+                android:id="@+id/sub_TCPSet_ip"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:digits="1234567890."
+                android:inputType="number"
+                android:textColorHighlight="#00a2e9"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service 端口"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"
+                android:textColor="#6d6d72"/>
+            <EditText
+                android:id="@+id/sub_TCPSet_port"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/editcursor"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:textColorHighlight="#88dbff"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cdcbcb"/>
+
+        <Button
+            android:id="@+id/sub_TCPSet_modify"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_margin="20dp"
+            android:text="确定"
+            android:textColor="#FFF"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@drawable/blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></LinearLayout>
+
+</LinearLayout>

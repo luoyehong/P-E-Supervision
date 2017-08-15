@@ -50,7 +50,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             public void onClick(View v) {
                 AlarmData alarmData = mAlramList.get(holder.getAdapterPosition());
                 Intent intent = new Intent(v.getContext(), SubActivity.class);
-                intent.putExtra(SubActivity.MAIN_ID, alarmData.getId());
+                intent.putExtra(SubActivity.MAIN_ID, alarmData.getnumber());
                 intent.putExtra(SubActivity.MAIN_LEVEL,1);
                 v.getContext().startActivity(intent);
             }
@@ -72,6 +72,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder> 
             holder.alarmStateText.setTextColor(Color.rgb(255,123,44));
             holder.timeText.setText(alarmData.getAlarmDefiniteTime());
         }else if ("已结束".equals(alarmData.getAlarmState())){
+            holder.alarmStateText.setTextColor(Color.BLACK);
             holder.timeText.setText(alarmData.getAlarmEndTime());
         }
     }
